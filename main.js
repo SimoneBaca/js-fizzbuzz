@@ -1,4 +1,4 @@
-alert('Lets go !');
+alert("lets go!!")
 
 /*
 -Scrivi un programma che stampi i numeri da 1 a 100
@@ -20,13 +20,20 @@ Provare a stampare la lista in pagina invece che in console.
 // #3 SE multiplo di 3 > Stampo Fizz al posto del numero
 // #5 SE multiplo di 5 > Stampo Buzz al posto del numero
 // #6 SE multiplo di 3 e 5 > Stampo FizzBuzz al posto del numero
+
 let printNumbers = document.getElementById('result');
 
 let numbers = ''; // Variabile d'appoggio
-
 for (let i = 1; i <= 100; i++) {
     console.log(i);
     numbers = numbers + i;
-}
+    if (i % 3 == 0) {
+        console.log("Fizz");
+    }
 
+    if (i % 5 == 0) {
+        console.log("Buzz");
+    }
+
+}
 printNumbers.innerHTML = numbers;
