@@ -20,3 +20,13 @@ Provare a stampare la lista in pagina invece che in console.
 // #3 SE multiplo di 3 > Stampo Fizz al posto del numero
 // #5 SE multiplo di 5 > Stampo Buzz al posto del numero
 // #6 SE multiplo di 3 e 5 > Stampo FizzBuzz al posto del numero
+let printNumbers = document.getElementById('result');
+
+let numbers = ''; // Variabile d'appoggio
+
+for (let i = 1; i <= 100; i++) {
+    console.log(i);
+    numbers = numbers + i;
+}
+
+printNumbers.innerHTML = numbers;
